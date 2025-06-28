@@ -342,6 +342,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    width: fit-content;
 }
 
 .service-card:hover {
@@ -357,7 +358,7 @@ body {
 
 /* Responsive Service Photos */
 .service-photo {
-  width: 100%;
+  width: auto;
   height: auto;
   max-height: 700px;
   object-fit: cover;
