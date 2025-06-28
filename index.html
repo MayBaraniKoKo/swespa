@@ -19,9 +19,13 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="row">
-                <div class="logo"> 
+<!--                 <div class="logo"> 
                     🌿 Swe Spa Wellness & Esthetic
-                </div>
+                </div> -->
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="SWE Logo" class="logo-img">
+              </div>
+
             </div>
             <ul class="nav-menu">
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -101,86 +105,22 @@
             </div>
             
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-header">
-                        <div class="service-icon">🎨</div>
-                        <h3>Massage Therapy</h3>
 
-                    </div>
-                    <p>Relax and rejuvenate with our signature massages, including Swedish, Deep Tissue, and Hot Stone therapies.</p>
-                    <ul class="service-features">
-                        <li>Swedish Massage</li>
-                        <li>Deep Tissue Massage</li>
-                        <li>Hot Stone Massage</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-header">
-                        <div class="service-icon">⚙️</div>
-                        <h3>Facial Treatments</h3>
-                    </div>
-                    <p>Revitalize your skin with our customized facial treatments for all skin types.</p>
-                    <ul class="service-features">
-                        <li>Classic Facial</li>
-                        <li>Anti-Aging Facial</li>
-                        <li>Hydration Boost</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-header">
-                        <div class="service-icon">💡</div>
-                        <h3>Body Treatments</h3>
-                    </div>
-                    <p>Nourish your skin with luxurious body scrubs, wraps, and detoxifying therapies.</p>
-                    <ul class="service-features">
-                        <li>Body Scrubs</li>
-                        <li>Body Wraps</li>
-                        <li>Detox Treatments</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-header">
-                        <div class="service-icon">🛡️</div>
-                        <h3>Wellness Rituals</h3>
-                    </div>
-                    <p>Signature spa rituals combining multiple treatments for a complete wellness journey.</p>
-                    <ul class="service-features">
-                        <li>Signature Rituals</li>
-                        <li>Couples Treatments</li>
-                        <li>Wellness Packages</li>
-                    </ul>
-                </div>
+              <div class="service-card">
+                  <img src="images/s1.jpg" alt="Massage Therapy" class="service-photo">
+              </div>
 
-                <div class="service-card">
-                    <div class="service-header">
-                        <div class="service-icon">💅</div>
-                        <h3>Beauty & Grooming</h3>
-                    </div>
-                    <p>Enhance your natural beauty with our professional grooming services for hands, feet, and more.</p>
-                    <ul class="service-features">
-                        <li>Manicure & Pedicure</li>
-                        <li>Waxing Services</li>
-                        <li>Brow & Lash Treatments</li>
-                        <li>Body Polishing</li>
-                    </ul>
-                </div>
+              <div class="service-card">
+                  <img src="images/s2.jpg" alt="Facial Treatments" class="service-photo">
+              </div>
 
-                <div class="service-card">
-                    <div class="service-header">
-                        <div class="service-icon">🧘‍♀️</div>
-                        <h3>Mind & Body Wellness</h3>
-                    </div>
-                    <p>Balance your body and mind through calming wellness experiences designed for inner peace.</p>
-                    <ul class="service-features">
-                        <li>Guided Meditation</li>
-                        <li>Breathwork Sessions</li>
-                        <li>Sound Healing Therapy</li>
-                        <li>Personalized Wellness Coaching</li>
-                    </ul>
-                </div>
+              <div class="service-card">
+                  <img src="images/s3.jpg" alt="Body Treatments" class="service-photo">
+              </div>
+
+              <div class="service-card">
+                  <img src="images/s4.jpg" alt="Body Treatments" class="service-photo">
+              </div>
                 
             </div>
             
@@ -343,7 +283,7 @@
                         <div class="contact-icon">✉️</div>
                         <div class="contact-details">
                             <h4>Email Us</h4>
-                            <p><a href="mailto:swespa@gmail.com">swespa@gmail.com</a></p>
+                            <p><a href="mailto:swespa@gmail.com">skinbyswejapan@gmail.com</a></p>
                         </div>
                     </div>
                     
@@ -455,88 +395,14 @@
     </div>
 </footer>
 
-<script>
-        // Navbar scroll effect
-    window.addEventListener('scroll', function() {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-
-        // Gallery filter functionality
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const galleryItems = document.querySelectorAll('.gallery-item');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-                // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-                // Add active class to clicked button
-            button.classList.add('active');
-
-            const filterValue = button.getAttribute('data-filter');
-
-            galleryItems.forEach(item => {
-                if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        });
-    });
-
-        // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-</script>
 
 <script>
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Stop normal form submit
-    
-    const form = event.target;
-    const formData = new FormData(form);
-    const formMessage = document.getElementById("formMessage");
-
-    fetch("contact.php", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => response.text())
-    .then(responseText => {
-        if (responseText.trim() === "OK") {
-            formMessage.textContent = "✅ Your message has been sent successfully!";
-            formMessage.className = "form-message success";
-            formMessage.style.display = "block";
-            form.reset(); // Reset form
-        } else {
-            formMessage.textContent = "❌ Oops! Something went wrong. Please try again.";
-            formMessage.className = "form-message error";
-            formMessage.style.display = "block";
-        }
-    })
-    .catch(error => {
-        console.error("Error:", error);
-        formMessage.textContent = "❌ Network error. Please try again later.";
-        formMessage.className = "form-message error";
-        formMessage.style.display = "block";
-    });
+    ...
 });
 </script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.js"></script>
 
 </body>
 </html>
