@@ -355,9 +355,11 @@ body {
     margin-bottom: 1.5rem;
 }
 
+/* Responsive Service Photos */
 .service-photo {
   width: 100%;
-  height: 700px;
+  height: auto;
+  max-height: 500px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -366,6 +368,12 @@ body {
 
 .service-photo:hover {
   transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .service-photo {
+    max-height: 300px;
+  }
 }
 
 
